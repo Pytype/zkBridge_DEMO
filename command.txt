@@ -1,0 +1,11 @@
+(1)  python3 generate_input.py
+2.  circom lockproof.circom --r1cs --wasm --sym -o build
+3.  node build/lockproof_js/generate_witness.js build/lockproof_js/lockproof.wasm input.json build/witness.wtns
+4.  snarkjs powersoftau new bn128 18 build/pot18_0000.ptau -v
+    snarkjs powersoftau contribute build/pot18_0000.ptau build/pot18_0001.ptau --name="1st contribution"
+    snarkjs powersoftau prepare phase2 build/pot18_0001.ptau build/pot18_final.ptau
+    snarkjs groth16 setup build/lockproof.r1cs build/pot18_final.ptau build/lockproof_final.zkey
+5.  snarkjs groth16 prove build/lockproof_final.zkey build/witness.wtns build/proof.json build/public.json
+6.  snarkjs zkey export solidityverifier build/lockproof_final.zkey build/Verifier.sol
+7.  snarkjs zkey export soliditycalldata build/public.json build/proof.json
+
