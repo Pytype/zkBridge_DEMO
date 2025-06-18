@@ -79,7 +79,7 @@ The project does **not yet support** the following:
 Check out the demo video on YouTube:
 
 👉 [Watch the Demo (Part 1)](https://youtu.be/COa2lm1Bgr4)
-👉 [Watch the Demo (Part 2)](https://youtu.be/COa2lm1Bgr4)
+👉 [Watch the Demo (Part 2)](https://youtu.be/4rm2FhoOV0o)
 
 ---
 
