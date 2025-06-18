@@ -74,7 +74,7 @@ The project does **not yet support** the following:
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Demo Video (Korean)
 
 Check out the demo video on YouTube:
 
